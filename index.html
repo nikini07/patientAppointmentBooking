@@ -18,7 +18,53 @@
             <p>Welcome to HealthLink Clinic's online appointment booking system. Our clinic is open Monday to Friday, 8:00 AM to 6:00 PM. This form streamlines patient registration and appointment scheduling, addressing real-life issues like long wait times and manual paperwork with secure online submissions.</p>
             <p><strong>Enhanced Features:</strong> Comprehensive patient details, medical history, symptom checker, insurance info, multiple file uploads, conditional fields (e.g., for emergencies), accessibility (ARIA labels), real-time validation, privacy consent, and a warm, accessible color scheme.</p>
         </div>
-        
+
+        <form method="post" action="https://example.com/submit-appointment" enctype="multipart/form-data" aria-labelledby="form-title"></form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" pattern="[A-Za-z\s]+" title="Only alphabetic characters and spaces allowed" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" pattern="[A-Za-z\s]+" title="Only alphabetic characters and spaces allowed" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" max="2025-09-01" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" id="male" value="Male" required aria-required="true">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="Other">
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" id="prefer_not" value="Prefer not to say">
+                        <label for="prefer_not">Prefer not to say</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" pattern="[\d\s\-\+\(\)]{10,15}" title="Valid phone number (10-15 digits)" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" rows="3" placeholder="Enter your full address..." required aria-required="true"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Appointment Request</button>
+            <button type="reset" class="reset-btn">Reset Form</button>
+        </form>
+
     </div>
 </body>
 </html>
