@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1e9; /* Warm beige background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+h1 {
+    color: #2e7d32; /* Forest green for a calming, health-focused vibe */
+}
+fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+legend {
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1.2em;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.2);
+}
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+button {
+    background-color: #2e7d32; /* Forest green buttons */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+}
+.reset-btn {
+    background-color: #8d6e63; /* Muted brown for reset button */
+    margin-left: 15px;
+}
+.reset-btn:hover {
+    background-color: #6d4c41; /* Darker brown on hover */
+}
+.info-box {
+    background-color: #efebe9; /* Light warm gray for info box */
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 1px solid #d7ccc8;
+}
+.urgency-select {
+    margin-top: 15px;
+}
+.conditional-section {
+    display: none;
+}
+.show-section {
+    display: block;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+    }
+}
