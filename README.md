@@ -40,3 +40,6 @@ patientAppointmentBooking/
 - Option 2: Use a local development server (e.g., with Python):
    ```bash
    python -m http.server 8000
+   ```
+   Then navigate to http://localhost:8000 in your browser.
+- Option 3: Deploy to a web server (e.g., Apache, Nginx) by copying index.html and styles.css to the server's root directory.
