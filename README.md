@@ -34,3 +34,9 @@ patientAppointmentBooking/
    ```bash
    git clone https://github.com/<your-username>/patientAppointmentBooking.git
    cd patientAppointmentBooking
+
+2. **Serve the Application:**
+Option 1: Open index.html directly in a web browser for local testing.
+Option 2: Use a local development server (e.g., with Python):
+   ```bash
+   python -m http.server 8000
