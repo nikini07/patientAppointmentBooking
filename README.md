@@ -36,6 +36,7 @@ patientAppointmentBooking/
    cd patientAppointmentBooking
 
 2. **Serve the Application:**
+   ```bash
 Option 1: Open index.html directly in a web browser for local testing.
 Option 2: Use a local development server (e.g., with Python):
    ```bash
