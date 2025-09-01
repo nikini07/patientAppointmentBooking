@@ -16,3 +16,9 @@ HealthLink Patient Appointment Booking is a web-based form designed to streamlin
 - Styling: Warm, accessible color scheme (forest green, muted brown, beige) with a clean, modern layout.
 - Interactivity: JavaScript for conditional field visibility (e.g., insurance details, emergency warning) and form validation.
 
+## File Structure
+
+patientAppointmentBooking/
+├── index.html         # Main HTML file containing the form structure and JavaScript
+├── styles.css         # External CSS file for styling the form
+└── README.md          # Project documentation (this file)
