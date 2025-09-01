@@ -95,6 +95,44 @@
                 </div>
             </fieldset>
 
+            <!--appointmentDetails-->
+            <fieldset></fieldset>
+                <legend>Appointment Details</legend>
+                <div class="form-group">
+                    <label for="department">Department/Specialty</label>
+                    <select name="department" id="department" required aria-required="true">
+                        <option value="">Please Select</option>
+                        <option value="general">General Medicine</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Preferred Doctor (if known)</label>
+                    <input type="text" name="doctor" id="doctor" placeholder="Enter doctor's name...">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Visit / Symptoms</label>
+                    <textarea name="reason" id="reason" rows="5" placeholder="Describe your symptoms or reason for the appointment in detail..." required aria-required="true"></textarea>
+                </div>
+                <div class="form-group urgency-select">
+                    <label for="urgency">Urgency Level</label>
+                    <select name="urgency" id="urgency" required aria-required="true">
+                        <option value="">Select Urgency</option>
+                        <option value="routine">Routine Check-up</option>
+                        <option value="medium">Moderate (Need within a week)</option>
+                        <option value="high">High (Urgent, within 48 hours)</option>
+                        <option value="emergency">Emergency (Call 911 instead)</option>
+                    </select>
+                </div>
+                <div id="emergency-info" class="conditional-section info-box">
+                    <p><strong>Important:</strong> For emergencies, please call 911 or visit the nearest ER immediately. This form is not for life-threatening situations.</p>
+                </div>
+            </fieldset>
+
             <button type="submit">Submit Appointment Request</button>
             <button type="reset" class="reset-btn">Reset Form</button>
         </form>
