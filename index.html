@@ -162,6 +162,28 @@
                 </div>
             </fieldset>
 
+            <!--preferefDate&Time-->
+            <fieldset>
+                <legend>Preferred Date & Time</legend>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" name="date" id="date" min="2025-09-02" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" name="time" id="time" min="08:00" max="18:00" step="1800" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label>Appointment Type</label>
+                    <div class="radio-group">
+                        <input type="radio" name="appt_type" id="in_person" value="In-Person" required aria-required="true">
+                        <label for="in_person">In-Person</label>
+                        <input type="radio" name="appt_type" id="telemedicine" value="Telemedicine">
+                        <label for="telemedicine">Telemedicine</label>
+                    </div>
+                </div>
+            </fieldset>
+
             <button type="submit">Submit Appointment Request</button>
             <button type="reset" class="reset-btn">Reset Form</button>
         </form>
