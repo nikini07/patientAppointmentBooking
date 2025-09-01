@@ -184,6 +184,27 @@
                 </div>
             </fieldset>
 
+            <!--attachmentsAndConsent-->
+            <fieldset>
+                <legend>Attachments and Consent</legend>
+                <div class="form-group">
+                    <label for="id_upload">Upload ID or Insurance Card (Optional)</label>
+                    <input type="file" name="id_upload" id="id_upload" accept="image/*, .pdf">
+                </div>
+                <div class="form-group">
+                    <label for="records_upload">Upload Previous Medical Records (Optional)</label>
+                    <input type="file" name="records_upload" id="records_upload" accept=".pdf, .doc, .docx, .zip" multiple>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="consent" id="consent" required aria-required="true">
+                    <label for="consent">I consent to the processing of my personal and medical data as per the clinic's privacy policy.</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="hipaa" id="hipaa" required aria-required="true">
+                    <label for="hipaa">I acknowledge receipt of the HIPAA Notice of Privacy Practices.</label>
+                </div>
+            </fieldset>
+
             <button type="submit">Submit Appointment Request</button>
             <button type="reset" class="reset-btn">Reset Form</button>
         </form>
