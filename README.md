@@ -18,7 +18,11 @@ HealthLink Patient Appointment Booking is a web-based form designed to streamlin
 
 ## File Structure
 
+## File Structure
+
+```plaintext
 patientAppointmentBooking/
-`├──` index.html         # Main HTML file containing the form structure and JavaScript
-`├──` styles.css         # External CSS file for styling the form
-`├──` README.md          # Project documentation (this file)
+├── index.html         # Main HTML file containing the form structure and JavaScript
+├── styles.css         # External CSS file for styling the form
+├── README.md          # Project documentation
+└── LICENSE            # MIT License file
