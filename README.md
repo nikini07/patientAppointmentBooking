@@ -26,6 +26,7 @@ patientAppointmentBooking/
 ├── styles.css         # External CSS file for styling the form
 ├── README.md          # Project documentation
 └── LICENSE            # MIT License file
+```
 
 ## Setup Instructions
 
