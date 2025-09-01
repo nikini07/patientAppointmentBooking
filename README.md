@@ -26,3 +26,10 @@ patientAppointmentBooking/
 ├── styles.css         # External CSS file for styling the form
 ├── README.md          # Project documentation
 └── LICENSE            # MIT License file
+
+## Setup Instructions
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/<your-username>/patientAppointmentBooking.git
+   cd patientAppointmentBooking
